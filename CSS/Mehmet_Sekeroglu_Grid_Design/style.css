@@ -1,0 +1,183 @@
+/*****************************************
+General Styles
+*****************************************/
+*{
+    box-sizing: border-box;
+    font-family: Helvetica, Arial,  sans-serif;
+}
+
+html{
+    font-size: 12px;
+}
+
+/*****************************************
+Layout
+******************************************/
+main{
+    background-color: #fafafa;
+    display: grid;
+    grid-template-areas: 
+    " nav nav nav nav nav nav"
+    ". header main-section main-section main-section ."
+    " . footer footer footer footer ."
+}
+header{
+    grid-area: header;
+    background-color: #fafafa;
+    position: relative;
+    right: 3vw;
+}
+
+nav{
+    grid-area: nav;
+    margin-bottom: 3vh;
+    background-color: #ffffff;
+}
+
+#main-section{
+    grid-area: main-section;  
+}
+
+footer{
+    grid-area: footer;
+    margin-top: 10vh;
+}
+
+nav ul{
+    justify-content: space-around;
+}
+
+#division-header, ul{
+    display: flex;
+}
+
+footer ul{
+    justify-content: space-evenly;
+    border-top: 1px solid rgb(212, 208, 208);
+}
+
+/******************************************
+Components
+******************************************/
+nav img{
+    width: 10vw;
+}
+
+#nav-list{
+    border-bottom: 1px solid rgb(212, 208, 208);
+    margin: 0px;
+}
+
+#search {
+    background-image: url('http://www.clker.com/cliparts/z/1/T/u/9/2/search-icon-hi.png');
+    background-size: 1em;
+    background-repeat: no-repeat;
+    background-position: 8vw;
+    text-indent: 10vw;
+    font-size: 1.5em;
+    background-color: #fafafa;
+    width: 22vw;
+    height: 6vh;
+    position: relative;
+    top: 1vh;  
+}
+
+#search:focus {
+    background-image:none;
+    text-indent:0px;
+}
+
+#nav-img img{
+    width: 2vw;
+    margin: 0 1vh;
+    position: relative;
+    top: 1vh;
+}
+
+.hicoders-logo{
+    border-radius: 50%;
+}
+
+.small-logo{
+    border: solid 1px black
+}
+
+.big-logo{
+    width: 13vw;
+    box-shadow: gray 0px 1px 0px 1px;
+}
+
+#division-header img{
+    width: 4vw;
+    position: relative;
+    top: .5vh;
+}
+
+footer img{
+    width: 2vw;
+}
+
+footer li:hover{
+    border-top: 1px solid black;
+    opacity: 1;
+}
+
+button{
+    height: 4vh;
+    margin-left: 2vw;
+    position: relative;
+    top: 3.5vh;
+    font-weight: bolder;
+}
+
+li{
+    list-style-type: none;
+    padding: 2vh;
+}
+
+ul{
+    padding: 0px;
+}
+
+#current-info li{
+    margin-right: 3vw;
+    padding: 0px;
+    position: relative;
+    bottom: 2vh;
+}
+
+.footer-text{
+    position: relative;
+    bottom: 1vh;
+    font-size: 1.5em;
+}
+
+footer li:first-child img{
+    width: 1.7vw;
+}
+
+footer li, #nav-img li:nth-child(n+3) img{
+    opacity: 0.7;
+}
+
+/************************************
+Typology
+************************************/
+#name{
+    font-size: 2em;
+    font-weight: lighter;
+}
+
+a, h2{
+    text-decoration: none;
+    color: black;
+    font-size: 1.3em;
+}
+
+#address{
+    color: blue;
+}
+
+#current-info li::first-letter{
+    font-weight:bolder;
+}

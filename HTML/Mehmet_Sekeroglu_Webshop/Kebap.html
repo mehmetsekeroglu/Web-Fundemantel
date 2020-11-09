@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week-02 Ödev- Web Shop</title>
+    <meta name="keywords" content="Doner, Pide , Kebap">
+    <meta name="author" content="Mehmet Sekeroglu">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1 style="text-align: center">HiCoders Cafe & Restaurant</h1>
+            <p>Doymaniz icin hersey...</p>
+        </header>
+        <section>
+            <!--Asagidaki menu tablo ile de olusturulabilirdi.
+                Ancak inline style kullanimina izin verildigi icin fieldset ve style="display:inline" kullanildi.-->
+            <fieldset class="menuler">
+                <nav>
+                    <fieldset style="display:inline" id="donermenu">
+                        <a href="./Doner.html"> <img
+                                style="border: 1px solid black; margin-left:48px; margin-top:30px; margin-right:48px"
+                                src="https://i.ibb.co/db5311z/doner-resim.png" alt="Doner" width="200" height="200"></a>
+                        <p style="text-align: center"><strong>Döner Menü - 50 CHF</strong></p>
+                    </fieldset>
+                    <fieldset style="display:inline" id="kebapmenu">
+                        <a href="./Kebap.html"> <img
+                                style="border: 1px solid black; margin-left:48px; margin-top:30px; margin-right:48px"
+                                src="https://i.ibb.co/YWwscYN/kebap-resim.png" alt="Kebap" width="200" height="200"></a>
+                        <p style="text-align: center;"><strong>Kebap Menü - 60 CHF</strong></p>
+                    </fieldset>
+                    <fieldset style="display:inline" id="pidemenu">
+                        <a href="./Pide.html"> <img
+                                style="border: 1px solid black; margin-left:48px; margin-top:30px; margin-right:48px"
+                                src="https://i.ibb.co/xDm3wnG/pide-resim.png" alt="Pide" width="200" ; height="200"></a>
+                        <p style="text-align: center"><strong>Pide Menü - 40 CHF</strong></p>
+                    </fieldset>
+                </nav>
+            </fieldset>
+        </section><br><br>
+        <section>
+            <article>
+                <!--Inline bir element olan <img>, "float:left" uygulamasi yapilarak sola yaslandi
+                     böylelikle yazilar ile resim yanyana görüntülendi.-->
+                <img src="https://i.ibb.co/5vTQg7v/adanakebapmenu.png" alt="Kebap Menu"
+                    style="border: 1px solid black; float: left; margin-right: 25px; width: 500px">
+                <h2 style="text-align: center">Hakiki Adana Kebap Menü</h2>
+                <p id="kebapaciklama">Doyurucu kebap menümüzde; 180 gr Adana Kebabi, pilav, patates kizartmasi ve icecek
+                    bulunmaktadir. Kebabimiz maharetli ustalarimiz tarafindan markamiza özel tarife uygun olarak
+                    hazirlanmaktadir.</p>
+            </article>
+        </section>
+        <section>
+            <table style="background-color: blanchedalmond; width: 400px" class="fiyatlistesi">
+                <caption><strong>Fiyat Listesi</strong></caption>
+                <tr>
+                    <th style="background-color: burlywood;">Spesiyeller</th>
+                    <th style="background-color: burlywood;">Fiyat</th>
+                </tr>
+                <tr>
+                    <td>Döner Menü</td>
+                    <td>50 CHF</td>
+                </tr>
+                <tr>
+                    <td>Porsiyon Döner</td>
+                    <td>40 CHF</td>
+                </tr>
+                <tr>
+                    <td>Kebap Menü</td>
+                    <td>60 CHF</td>
+                </tr>
+                <tr>
+                    <td>Porsiyon Kebap</td>
+                    <td>50 CHF</td>
+                </tr>
+                <tr>
+                    <td>Pide Menü</td>
+                    <td>40 CHF</td>
+                </tr>
+                <tr>
+                    <td>Porsiyon Pide</td>
+                    <td>30 CHF</td>
+                </tr>
+                <tr>
+                    <td>Yesil Salata</td>
+                    <td>10 CHF</td>
+                </tr>
+                <tr>
+                    <td>Coban Salata</td>
+                    <td>15 CHF</td>
+                </tr>
+                <tr>
+                    <td>Patates Kizartmasi</td>
+                    <td>7 CHF</td>
+                </tr>
+            </table>
+        </section><br><br>
+        <hr>
+        <footer style="text-align: center">
+            <h4>HiCoders Cafe & Restaurant<sup>&reg;</sup></h4>
+            <p id="footertarih">&copy; 2017-2020</p>
+            <p id="footeradres">Adres:Prime Tower, Hardstrasse 201, 8005 Zürich</p>
+        </footer>
+        <hr>
+    </main>
+</body>
+
+</html>

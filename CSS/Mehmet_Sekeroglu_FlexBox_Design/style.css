@@ -1,0 +1,160 @@
+/************************************************
+General Styling
+************************************************/
+html, body{
+    background: url(./img/background.png) no-repeat;
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px; 
+}
+
+/*********************************************
+Layout Styles
+*********************************************/
+
+main{
+    display: flex;
+    flex-direction: column;
+    color: grey;
+    box-shadow: 2px 2px 2px 2;
+}
+
+#main-section{
+    background-color: whitesmoke;
+    width: 30vw;
+    height:79vh;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+#personal-info{
+    width: 25vw;
+    height: 30vh;
+    background-color: snow;
+    margin-top: -10vh; 
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 1px 2px grey;    
+}
+
+.account-info{
+    background-color:snow;
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    height: 38vh;
+    box-shadow: 0px 1px 2px grey;
+    border-radius: 2px;
+} 
+
+#privacy-settings div{
+    display:flex;
+    justify-content: space-between;
+    background-color:snow;
+    width: 25vw;
+    border-radius: 2px;
+    box-shadow: 1px 1px 2px 0px grey;
+    margin-top: -1vh;
+}
+
+/*********************************************
+Typology
+*********************************************/
+
+figure+p{
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+}
+
+nav+p{
+    font-size: 1em;
+    text-align: center;
+    margin: 4vh 1vh 0vh;
+}
+
+h3{
+    padding: 0px;
+    font-size: 1em;
+    margin-left: -2vw;
+}
+
+span{
+    margin-left: 2vw;
+    font-size: 1em;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*********************************************
+Components
+*********************************************/
+
+#main-header{
+    background-color: rgb(24, 153, 204);
+    width: 30vw;
+    height: 20vh;
+}
+
+[alt*="Dot"]{
+    width: 1vw;
+    float: right;
+    margin-right: 2vh;
+}
+
+[alt*="Back"]{
+    width: 1vw;
+    margin-left: 2vh;
+ }
+
+[alt*="Profil"]{
+    width: 10vh;
+    margin-top:-7vh; 
+    display: flex;  
+}
+
+[alt*="Camera"]{
+    width: 3vh;
+    margin-top:-3vh; 
+    margin-left: 7vh;
+    display: flex;  
+}
+
+.social-media{
+    width: 3vh;
+    margin: 0 2vh;
+}
+
+.social-media-nav{
+    display: flex;
+}
+
+.account-icon{
+    width: 3vw;
+    margin-left: 2vh;
+    margin-top: 3vh;
+    margin-bottom: -2vh;
+}
+
+.privacy-icon img{
+    width: 3vw;
+    margin: 2vh;
+}
+
+.privacy-icon:hover, .account-icon:hover{
+    opacity: 0.7;
+}
+
+nav a:active{
+    opacity: 0.7;
+}
