@@ -1,22 +1,25 @@
-/* Using "relative", the Element is positioned according to the normal flow of the document. */
+/******* Using "relative", the Element is positioned according to the normal flow of the document. *******/
 #background{ 
-    width: 250px;
-    height: 250px;
+    
+    width: 252px;
+    height: 252px;
     background-color: red;
     position: relative;
 }
-/* "absolute" was used to position the elements on top of each other. */
+/****** "absolute" was used to position the elements on top of each other. ******/
 
  #horizontal{
+
     width: 150px;
     height: 50px;
     background-color:white;
     margin:100px 50px;
     position: absolute;
 }
-/* "absolute" was used to position the elements on top of each other. */
+/******* "absolute" was used to position the elements on top of each other. ******/
 
 #vertical{
+
     width: 50px;
     height: 150px;
     background-color: white;
